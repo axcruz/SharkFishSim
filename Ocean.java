@@ -2,42 +2,18 @@
 
 /**
  *  The Ocean class defines an object that models an ocean full of sharks and
- *  fish.  Descriptions of the methods you must implement appear below.  They
- *  include a constructor of the form
- *
- *      public Ocean(int i, int j, int starveTime);
- *
- *  that creates an empty ocean having width i and height j, in which sharks
- *  starve after starveTime timesteps.
- *
- *  See the README file accompanying this project for additional details.
+ *  fish.
  */
 
 public class Ocean {
-
-    /**
-     *  Do not rename these constants.  WARNING:  if you change the numbers, you
-     *  will need to recompile Test4.java.  Failure to do so will give you a very
-     *  hard-to-find bug.
-     */
-
     public final static int EMPTY = 0;
     public final static int SHARK = 1;
     public final static int FISH = 2;
-
-    /**
-     *  Define any variables associated with an Ocean object here.  These
-     *  variables MUST be private.
-     */
 
     private OceanNode[][] OceanList;
     private int OceanHeight;
     private int OceanWidth;
     private int starveTime;
-
-    /**
-     *  The following methods are required for Part I.
-     */
 
     /**
      *  Ocean() is a constructor that creates an empty ocean having width i and
@@ -257,10 +233,6 @@ public class Ocean {
     }
 
     /**
-     *  The following method is required for Part II.
-     */
-
-    /**
      *  addShark() (with three parameters) places a shark in cell (x, y) if the
      *  cell is empty.  The shark's hunger is represented by the third parameter.
      *  If the cell is already occupied, leave the cell as it is.  You will need
@@ -283,10 +255,6 @@ public class Ocean {
 	    cur.starve();
 	}	
     }
-
-    /**
-     *  The following method is required for Part III.
-     */
 
     /**
      *  sharkFeeding() returns an integer that indicates the hunger of the shark

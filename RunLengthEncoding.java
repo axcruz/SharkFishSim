@@ -2,31 +2,13 @@
 
 /**
  *  The RunLengthEncoding class defines an object that run-length encodes an
- *  Ocean object.  Descriptions of the methods you must implement appear below.
- *  They include constructors of the form
- *
- *      public RunLengthEncoding(int i, int j, int starveTime);
- *      public RunLengthEncoding(int i, int j, int starveTime,
- *                               int[] runTypes, int[] runLengths) {
- *      public RunLengthEncoding(Ocean ocean) {
- *
- *  that create a run-length encoding of an Ocean having width i and height j,
- *  in which sharks starve after starveTime timesteps.
- *
- *  The first constructor creates a run-length encoding of an Ocean in which
- *  every cell is empty.  The second constructor creates a run-length encoding
- *  for which the runs are provided as parameters.  The third constructor
+ *  Ocean object. The first constructor creates a run-length encoding of an 
+ *  Ocean in which every cell is empty.  The second constructor creates a run-length 
+ *  encoding for which the runs are provided as parameters.  The third constructor
  *  converts an Ocean object into a run-length encoding of that object.
- *
- *  See the README file accompanying this project for additional details.
  */
 
 public class RunLengthEncoding {
-
-    /**
-     *  Define any variables associated with a RunLengthEncoding object here.
-     *  These variables MUST be private.
-     */
 
     private RLENode head = new RLENode(-1);
     private RLENode tail = new RLENode(-2);
@@ -36,10 +18,6 @@ public class RunLengthEncoding {
     private int height;
     private int starveTime;
     private int RLELength;
-
-    /**
-     *  The following methods are required for Part II.
-     */
 
     /**
      *  RunLengthEncoding() (with three parameters) is a constructor that creates

@@ -1,12 +1,5 @@
 /* Simulation.java */
 
-/* DO NOT CHANGE THIS FILE (except as noted). */
-/* YOUR SUBMISSION MUST WORK CORRECTLY WITH _OUR_ COPY OF THIS FILE. */
-
-/* (You may wish to make temporary changes or insert println() statements    */
-/* while testing your code.  When you're finished testing and debugging,     */
-/* though, make sure your code works with the original version of this file. */
-
 import java.awt.*;
 import java.util.*;
 
